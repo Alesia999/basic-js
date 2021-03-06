@@ -1,13 +1,21 @@
 const CustomError = require("../extensions/custom-error");
 
 class VigenereCipheringMachine {
-  encrypt() {
-    throw new CustomError('Not implemented');
-    // remove line with error and write your code here
-  }    
-  decrypt() {
-    throw new CustomError('Not implemented');
-    // remove line with error and write your code here
+  encrypt(word, keyword) {
+    let alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.!?,:;'/ ";
+    let encryptWord = "";
+    for (let i = 0; i < word.length; i++) {
+
+    }
+    return encryptWord;
+  }
+  decrypt(word, keyword) {
+    let alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.!?,:;'/ ";
+    let decryptWord = "";
+    for (let i = 0; i < word.length; i++) {
+
+    }
+    return decryptWord;
   }
 }
 
