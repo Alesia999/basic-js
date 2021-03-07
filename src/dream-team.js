@@ -4,7 +4,13 @@ const CustomError = require("../extensions/custom-error");
 module.exports = function createDreamTeam(team) {
 
 return team
+.toString()
+.replace(/\s/g, '')
+.replace(/[0-9]/g, '')
+.replace(',,', ',')
+.replace('[','')
+.split(',')
 .sort()
-.map(item => item.slice(0, 1).toUpperCase())
-.join("");
+.map((word)=>word[0]).join('')
+.toUpperCase()
 };
