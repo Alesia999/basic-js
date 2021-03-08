@@ -2,7 +2,7 @@ const CustomError = require("../extensions/custom-error");
 
 
 module.exports = function createDreamTeam(team) {
-
+ if (!Array.isArray(team)) return false;
 return team
 .toString()
 .replace(/\s/g, '')
